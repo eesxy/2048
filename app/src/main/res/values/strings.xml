@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name" translatable="false">2048</string>
+    <string name="score">Score\n</string>
+    <string name="text_2048">2048</string>
+    <string name="restart">Restart</string>
+</resources>
