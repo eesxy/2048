@@ -37,7 +37,7 @@ public class MyNode extends FrameLayout {
 
     public void setNum(int num) {
         this.num = num;
-        setStyle(num);
+        this.setStyle(num);
         if (num == 0) {
             label.setText("");
         } else {
@@ -66,7 +66,9 @@ public class MyNode extends FrameLayout {
             default:drawable.setColor(ContextCompat.getColor(getContext(),R.color.color_over));break;
         }
         label.setBackground(drawable);
-        label.setTextSize(40);
+        if(num<1024)
+            label.setTextSize(40);
+        else label.setTextSize(32);
         if(num<=4)
             label.setTextColor(Color.GRAY);
         else
